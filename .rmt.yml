@@ -29,9 +29,8 @@ master:
     version-generator: semantic # More complex versionning (semantic)
     version-persister:
         vcs-tag:
-            tag-prefix: 'v'         # No more prefix for tags
+            tag-prefix: ''         # No more prefix for tags
     pre-release-actions:
         changelog-update:          # Update a CHANGELOG file before the release
             format: semantic
         vcs-commit: ~              # Commit the CHANGELOG
-        

@@ -33,4 +33,5 @@ master:
     pre-release-actions:
         changelog-update:          # Update a CHANGELOG file before the release
             format: semantic
-        vcs-commit: ~              # Commit the CHANGELOG
+        vcs-commit:
+          commit-message: update changelog for %version%

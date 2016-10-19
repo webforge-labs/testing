@@ -1,5 +1,11 @@
 # testing
 
+## install with npm
+
+```
+npm install --save-dev webforge-testing
+```
+
 ## setup webdriver io with cucumber
 
 tests/js/webdriverio/setup.js

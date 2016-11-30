@@ -9,8 +9,8 @@ module.exports = function(that, options) {
       cli: this.path('bin')+'/cli'+(os.platform() === 'win32' ? '.bat' : '.sh')
     };
 
-    GLOBAL.expect = require('chai').expect;
-    GLOBAL.client = browser;
+    global.expect = require('chai').expect;
+    global.client = browser;
 
     client.timeouts('implicit', 300);
     client.timeouts('page load', 5000);

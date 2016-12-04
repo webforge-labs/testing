@@ -43,7 +43,7 @@ IF EXIST node_modules\webforge-testing\node_modules\.bin\wdio.cmd (
 
 ```
 
-wdio.cucumber.conf.js
+tests/js/webdriverio/wdio.cucumber.conf.js
 ```js
 var hostname = require('os').hostname();
 

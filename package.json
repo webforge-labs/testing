@@ -17,7 +17,7 @@
   "dependencies": {
     "chai": "^3.5.0",
     "child-process-promise": "^2.2.1",
-    "css-tester": ">=1.1.0",
+    "css-tester": "~1.0.5",
     "debug": "^2.2.0",
     "wdio-cucumber-framework": "~0.3.1",
     "wdio-junit-reporter": "^0.3.0",

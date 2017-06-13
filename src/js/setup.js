@@ -31,17 +31,4 @@ module.exports = function(that, options) {
 
   that.World.prototype.debug = require('debug')('cucumber-world');
 
-  that.Before(function () {
-    browser.windowHandleSize({width:1024,height:900});
-  });
-
-  that.After(function () {
-    var logs = browser.log('browser');
-
-    if (logs.state === 'success' && logs.value.length) {
-      console.log('from browser:');
-      console.log(logs.value);
-    }
-  });
-
 };

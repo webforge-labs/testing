@@ -16,10 +16,12 @@ module.exports = function(that, options) {
     client.timeouts('page load', 5000);
 
     this.screenshot = function() {
+
+
       var date = new Date();
       var timestamp = date.toJSON().replace(/:/g, '-')
       var filename = `ERROR_wbfrg_testing_${timestamp}.png`;
-      client.saveScreenshot('.screenshots/'+filename);
+      client.saveScreenshot(client.options.screenshotPath+'/'+filename);
     }
   };
 

@@ -13,11 +13,8 @@ module.exports = function(that, options) {
     global.client = browser;
 
     client.timeouts('implicit', 300);
-    client.timeouts('page load', 5000);
 
     this.screenshot = function() {
-
-
       var date = new Date();
       var timestamp = date.toJSON().replace(/:/g, '-')
       var filename = `ERROR_wbfrg_testing_${timestamp}.png`;
